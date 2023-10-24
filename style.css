@@ -34,7 +34,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+padding-bottom:10px ;
         margin-top: 20px;
     }
 
@@ -115,10 +115,14 @@ body {
     .feed {
         margin-top: 10px;
         overflow: scroll;
-        height: 615px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .wrapper{
+        height: 82vh;
+        overflow: scroll;
     }
 
     /* feed */
