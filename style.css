@@ -9,89 +9,193 @@
 
 /* utility */
 .m-width {
-    max-width: 100vw;
-    padding: 0px 4.5vw;
+    max-width: 90vw;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
 }
 
 /* utility */
+
 
 
 body {
     background-color: black;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+@media screen and (max-width:480px) {
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    /* logo */
+    .logo img {
+        width: 104px;
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+    }
+
+    /* logo */
+
+
+    /* stories con */
+
+    .stories {
+        display: flex;
+        padding: 8px 8px 0px 8px;
+        align-items: flex-start;
+        gap: 12px;
+        overflow: hidden;
+        margin-top: 8px;
+    }
+
+    .story {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .story-img {
+        width: 64.857px;
+        height: 64.857px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid #fff;
+    }
+
+    .story-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .story p {
+        color: #FFF;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 0.71875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.375rem;
+        /* 191.304% */
+    }
+
+
+    .story-linear {
+        width: 74px;
+        height: 74px;
+        flex-shrink: 0;
+        border: 2.5px solid green;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* #C913B9, #F9373F, #FECD00 */
+    }
+
+    /* stories con */
+
+    /* feed */
+    .feed {
+        margin-top: 10px;
+    }
+
+    /* feed */
+
+    /* instagram feed stasrt */
+    .post-linear {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        border: 1.5px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post-img {
+        width: 32.428px;
+        height: 32.428px;
+        flex-shrink: 0;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .post-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .post-username p:nth-child(1) {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .post-top {
+        justify-content: space-between;
+    }
+
+    .post-username p:nth-child(2) {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 0.6875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.01875rem;
+    }
+
+    .post-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .post-username {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .post-right p {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .post-img-con {
+        width: 100%;
+        height: 450px;
+        flex-shrink: 0;
+        margin-top: 10px;
+        ;
+    }
+    .post-img-con img{
+width: 100%;
+height: 100%;
+    }
+
+    /* instagram feed ends */
+
+
+
+
 }
-
-/* logo */
-.logo img {
-    width: 104px;
-}
-
-.right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 24px;
-}
-
-/* logo */
-
-
-/* stories con */
-
-.stories {
-    display: flex;
-    padding: 8px 8px 0px 8px;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.story {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 7px;
-}
-
-.story-img {
-    width: 64.857px;
-    height: 64.857px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid #fff;
-}
-
-.story-img img {
-    width: 100%;
-    height: 100%;
-}
-
-.story p {
-    color: #FFF;
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 0.71875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.375rem;
-    /* 191.304% */
-}
-
-
-.story-linear {
-    width: 72px;
-    height: 72px;
-    flex-shrink: 0;
-    border: 2.5px solid #C913B9;
-    border-radius: 50%;
-    stroke-width: 2.5px;
-    stroke: #C913B9;
-}
-
-/* stories con */
